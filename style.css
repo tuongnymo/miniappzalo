@@ -42,6 +42,35 @@ body {
   position: relative;
   overflow: hidden
 }
+.banner-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1250px; /* tổng chiều rộng phù hợp: 851 + 399 */
+  margin: 0 auto;
+  gap: 10px;
+  height: 315px;
+}
+
+.main-banner, .side-banner {
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-banner {
+  flex: 851;
+}
+
+.side-banner {
+  flex: 399; /* để tổng là 1250 */
+}
+
+.main-banner img,
+.side-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
 
 .banner-image {
