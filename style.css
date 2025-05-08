@@ -37,9 +37,14 @@ body {
 }
 
 .banner {
-  width: 851px;
-  height: 315px;
-}
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+  opacity: 1;
+   filter: none;
+  }
+
+
 
 .banner-image {
   width: 100%;
