@@ -1,19 +1,46 @@
-index.html
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <meta charset="UTF-8"/>
-    <title>Fullstore Fashion</title>
-    <link rel="stylesheet" href="style.css"/>
-    <script src="http://static.zalo.me/miniapp/sdk.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fullstore Fashion</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>👗 Fullstore Fashion</h1>
-        <p>Chào mừng đến với Shop thời trang Fullstore</p>
-        <p id="user-info">Đang tải tên người dùng...</p>
-        <a class="button" href="products.html">Xem sản phẩm</a>
+  <!-- Header with Logo and Banner -->
+  <header>
+    <div class="logo">
+      <img src="assets/images/Logo.png" alt="Fullstore Fashion Logo">
     </div>
-    <script src="app.js"></script>
+    <div class="banner">
+      <img src="assets/images/Banner.png" alt="Fashion Banner">
+    </div>
+  </header>
+
+  <!-- Featured Products Section -->
+  <section class="products">
+    <h2>Sản phẩm nổi bật</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="images/product1.jpg" alt="Giày thể thao">
+        <h3>Giày thể thao nam</h3>
+        <p class="price">350,000 VND</p>
+        <button class="buy-now">Mua ngay</button>
+      </div>
+      <div class="product">
+        <img src="images/product2.jpg" alt="Giày cao gót">
+        <h3>Giày cao gót nữ</h3>
+        <p class="price">450,000 VND</p>
+        <button class="buy-now">Mua ngay</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Fullstore Fashion. Tất cả quyền được bảo vệ.</p>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>

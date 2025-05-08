@@ -1,17 +1,122 @@
-
-{
-    "name": "fullstore",
-    "title": "Fullstore Fashion",
-    "version": "1.0.0",
-    "pages": [
-      {
-        "path": "index.html",
-        "name": "Trang chủ"
-      },
-      {
-        "path": "products.html",
-        "name": "Sản phẩm"
-      }
-    ]
+[
+  {
+    "id": 1,
+    "name": "Áo thun trắng basic nam",
+    "image": "images/ao-thun-trang.jpg",
+    "price": "149,000 VND"
+  },
+  {
+    "id": 2,
+    "name": "Quần jeans slimfit xanh",
+    "image": "images/quan-jeans.jpg",
+    "price": "299,000 VND"
+  },
+  {
+    "id": 3,
+    "name": "Giày sneaker nam Fullstore",
+    "image": "images/giay-nam.jpg",
+    "price": "499,000 VND"
+  },
+  {
+    "id": 4,
+    "name": "Váy suông nữ kẻ caro",
+    "image": "images/vay-nu.jpg",
+    "price": "259,000 VND"
+  },
+  {
+    "id": 5,
+    "name": "Túi đeo chéo thời trang nữ",
+    "image": "images/tui-deo-nu.jpg",
+    "price": "189,000 VND"
+  },
+  {
+    "id": 6,
+    "name": "Áo sơ mi trắng nam form Hàn",
+    "image": "images/so-mi-nam.jpg",
+    "price": "199,000 VND"
+  },
+  {
+    "id": 7,
+    "name": "Giày thể thao nữ basic",
+    "image": "images/giay-nu.jpg",
+    "price": "429,000 VND"
+  },
+  {
+    "id": 8,
+    "name": "Áo khoác jean unisex",
+    "image": "images/ao-khoac-jean.jpg",
+    "price": "349,000 VND"
+  },
+  {
+    "id": 9,
+    "name": "Mũ lưỡi trai Fullstore",
+    "image": "images/mu-luoi-trai.jpg",
+    "price": "99,000 VND"
+  },
+  {
+    "id": 10,
+    "name": "Túi tote canvas trắng",
+    "image": "images/tui-tote.jpg",
+    "price": "129,000 VND"
+  },
+  {
+    "id": 11,
+    "name": "Quần short kaki nam",
+    "image": "images/quan-short.jpg",
+    "price": "179,000 VND"
+  },
+  {
+    "id": 12,
+    "name": "Váy hoa dáng dài nữ",
+    "image": "images/vay-hoa.jpg",
+    "price": "289,000 VND"
+  },
+  {
+    "id": 13,
+    "name": "Áo phông unisex in hình",
+    "image": "images/ao-phong-unisex.jpg",
+    "price": "159,000 VND"
+  },
+  {
+    "id": 14,
+    "name": "Túi đeo chéo nam vải bố",
+    "image": "images/tui-nam.jpg",
+    "price": "199,000 VND"
+  },
+  {
+    "id": 15,
+    "name": "Áo len cổ lọ nữ",
+    "image": "images/ao-len.jpg",
+    "price": "239,000 VND"
+  },
+  {
+    "id": 16,
+    "name": "Dép quai ngang Fullstore",
+    "image": "images/dep-quai-ngang.jpg",
+    "price": "119,000 VND"
+  },
+  {
+    "id": 17,
+    "name": "Áo croptop nữ mùa hè",
+    "image": "images/croptop-nu.jpg",
+    "price": "149,000 VND"
+  },
+  {
+    "id": 18,
+    "name": "Quần jogger thể thao",
+    "image": "images/jogger.jpg",
+    "price": "269,000 VND"
+  },
+  {
+    "id": 19,
+    "name": "Túi xách mini nữ dự tiệc",
+    "image": "images/tui-dutiec.jpg",
+    "price": "209,000 VND"
+  },
+  {
+    "id": 20,
+    "name": "Áo hoodie nỉ form rộng",
+    "image": "images/hoodie.jpg",
+    "price": "319,000 VND"
   }
-  
+]

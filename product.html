@@ -1,27 +1,41 @@
-product.html
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <title>Sản phẩm - Fullstore</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết sản phẩm - Fullstore Fashion</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>👚 Sản phẩm nổi bật</h1>
-    <div class="products">
-      <div class="product-card">
-        <img src="https://via.placeholder.com/150" alt="Áo thun nữ" />
-        <h3>Giày nam cao cấp</h3>
-        <p>Giá: 1.999.000đ</p>
-      </div>
-      <div class="product-card">
-        <img src="https://via.placeholder.com/150" alt="Đầm công sở" />
-        <h3>Dép Nam chất liệu da bền</h3>
-        <p>Giá: 849.000đ</p>
-      </div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Fullstore Fashion Logo">
     </div>
-    <a class="button" href="index.html">← Quay về</a>
-  </div>
+    <div class="banner">
+      <img src="images/banner.jpg" alt="Fashion Banner">
+    </div>
+  </header>
+
+  <!-- Product Details Section -->
+  <section class="product-detail">
+    <div class="product-image">
+      <img src="images/product1.jpg" alt="Giày thể thao nam">
+    </div>
+    <div class="product-info">
+      <h2>Giày thể thao nam</h2>
+      <p class="price">350,000 VND</p>
+      <p class="description">Giày thể thao chất liệu vải, kiểu dáng thể thao, phù hợp cho mọi hoạt động ngoài trời.</p>
+      <button class="buy-now">Mua ngay</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Fullstore Fashion. Tất cả quyền được bảo vệ.</p>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
