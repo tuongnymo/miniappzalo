@@ -42,19 +42,14 @@ body {
   position: relative;
   overflow: hidden
 }
-.banner-row {
+.banner-container {
   display: flex;
   width: 100%;
   height: auto;
 }
 
-.banner-item {
-  flex: 1;
-  overflow: hidden;
-}
-
-.banner-item img {
-  width: 100%;
+.banner-container img {
+  width: 50%;
   height: auto;
   display: block;
   object-fit: cover;
