@@ -42,6 +42,13 @@ body {
   position: relative;
   overflow: hidden
 }
+.banner {
+  width: 100vw; /* Chiếm toàn bộ chiều ngang viewport */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 .banner-wrapper {
   display: flex;
   width: 100%;
