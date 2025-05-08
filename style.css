@@ -1,79 +1,100 @@
-/* General styling */
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  box-sizing: border-box;
 }
 
 /* Header */
 header {
-  text-align: center;
   background-color: #333;
-  color: #fff;
-  padding: 20px;
+  padding: 10px;
+  text-align: center;
 }
 
-.logo img {
+header .logo img {
   width: 150px;
 }
 
-.banner img {
+/* Banner Slider */
+.banner-slider {
   width: 100%;
-  height: auto;
-  margin-top: 10px;
+  height: 300px;
 }
 
-/* Products section */
-.products {
-  margin: 20px;
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Featured Products Section */
+.featured-products {
+  padding: 20px;
   text-align: center;
+}
+
+.featured-products h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
 .product-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
-.product {
-  background-color: #fff;
-  padding: 15px;
+.product-item {
+  width: 200px;
   border: 1px solid #ddd;
-  width: 250px;
+  padding: 10px;
   text-align: center;
 }
 
-.product img {
+.product-item img {
   width: 100%;
   height: auto;
 }
 
-.product h3 {
+.product-item .name {
   font-size: 1.2em;
-  margin: 10px 0;
+  margin-top: 10px;
 }
 
-.product .price {
-  color: #e74c3c;
+.product-item .price {
+  font-size: 1.1em;
+  color: #e60000;
+  margin-top: 10px;
 }
 
-.product .buy-now {
-  background-color: #3498db;
-  color: white;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
+.product-item .old-price {
+  font-size: 1em;
+  text-decoration: line-through;
+  color: #777;
 }
 
-.product .buy-now:hover {
-  background-color: #2980b9;
+.product-item .stars {
+  color: #ff9900;
+  margin-top: 5px;
 }
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 10px;
   background-color: #333;
   color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
 }
