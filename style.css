@@ -38,7 +38,8 @@ body {
 
 .banner {
   position: relative;
-  height: 450px;
+  width: 851px;
+  height: 315px;
   overflow: hidden;
 }
 
