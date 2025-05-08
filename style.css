@@ -44,19 +44,17 @@ body {
 }
 .banner-wrapper {
   display: flex;
-  width: 100vw;         /* Chiếm toàn bộ chiều ngang trình duyệt */
-  height: 315px;        /* Chiều cao đúng theo ảnh */
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  width: 100%;
+  height: auto;
 }
 
 .banner-wrapper img {
-  width: 50vw;          /* Mỗi ảnh chiếm 50% chiều ngang */
-  height: 100%;
-  object-fit: cover;    /* Cắt và lấp đầy khung mà không bị méo */
+  width: 50%;
+  height: auto;
+  object-fit: cover;
   display: block;
 }
+
 
 
 .banner-content {
