@@ -24,20 +24,25 @@ header .logo img {
 /* Banner Slider */
 .banner-slider {
   width: 100%;
+  height: 300px; /* GIỚI HẠN CHIỀU CAO */
   overflow: hidden;
   position: relative;
   margin-top: 60px;
+  border-radius: 12px; /* Bo góc nếu muốn đẹp hơn */
 }
+
 .slides {
   display: flex;
   width: 300%;
+  height: 100%;
   animation: slide 9s infinite;
 }
+
 .slides img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; /* Ảnh sẽ giữ tỷ lệ và bao phủ vùng hiển thị */
   flex: 1 0 100%;
-  object-fit: cover;
 }
 @keyframes slide {
   0%   { transform: translateX(0); }
