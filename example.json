@@ -1,0 +1,17 @@
+
+{
+    "name": "fullstore",
+    "title": "Fullstore Fashion",
+    "version": "1.0.0",
+    "pages": [
+      {
+        "path": "index.html",
+        "name": "Trang chủ"
+      },
+      {
+        "path": "products.html",
+        "name": "Sản phẩm"
+      }
+    ]
+  }
+  
