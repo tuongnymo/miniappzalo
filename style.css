@@ -37,10 +37,8 @@ body {
 }
 
 .banner {
-  position: relative;
   width: 851px;
   height: 315px;
-  overflow: hidden;
 }
 
 .banner-image {
