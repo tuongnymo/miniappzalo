@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fullstore Fashion</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullstore Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Swiper CSS for Banner Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 </head>
 <body>
-  <!-- Header with Logo and Banner -->
-  <header>
-    <div class="logo">
-      <img src="https://i.imgur.com/uKvrhIO.png" alt="Fullstore Fashion Logo">
-    </div>
-    <div class="banner">
-      <img src="https://i.imgur.com/MhISrz6.png" alt="Fashion Banner">
-    </div>
-  </header>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="https://i.imgur.com/uKvrhIO.png" alt="Fullstore Fashion Logo">
+        </div>
+    </header>
 
-  <!-- Featured Products Section -->
-  <section class="products">
-    <h2>Sản phẩm nổi bật</h2>
-    <div class="product-list">
-      <div class="product">
-        <img src="https://i.imgur.com/fythRRN.jpeg" alt="Giày thể thao">
-        <h3>Giày thể thao nam</h3>
-        <p class="price">350,000 VND</p>
-        <button class="buy-now">Mua ngay</button>
-      </div>
-      <div class="product">
-        <img src="https://i.imgur.com/rBMJEiA.jpeg" alt="Dep Nam LV">
-        <h3>Giày cao gót nữ</h3>
-        <p class="price">450,000 VND</p>
-        <button class="buy-now">Mua ngay</button>
-      </div>
-    </div>
-  </section>
+    <!-- Banner Slider -->
+    <section class="banner-slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://i.imgur.com/MhISrz6.png" alt="Banner 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://i.imgur.com/wgkQviY.png" alt="Banner 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://i.imgur.com/2s9vRnI.png" alt="Banner 3">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Fullstore Fashion. Tất cả quyền được bảo vệ.</p>
-  </footer>
+    <!-- Danh mục nổi bật -->
+    <section class="featured-products">
+        <h2>Danh mục nổi bật</h2>
+        <div class="product-list" id="product-list"></div>
+    </section>
 
-  <script src="app.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>Liên hệ: <a href="mailto:info@fullstorefashion.com">info@fullstorefashion.com</a></p>
+        <p>Fanpage: <a href="https://facebook.com/fullstorefashion" target="_blank">Fullstore Fashion</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
