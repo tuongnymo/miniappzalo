@@ -1,23 +1,33 @@
-[
-  {
-      "name": "Giày thể thao nam ABC",
-      "image": "https://via.placeholder.com/200x200",
-      "originalPrice": 500000,
-      "discountPrice": 450000,
-      "rating": 4
-  },
-  {
-      "name": "Giày thể thao nữ XYZ",
-      "image": "https://via.placeholder.com/200x200",
-      "originalPrice": 600000,
-      "discountPrice": 550000,
-      "rating": 5
-  },
-  {
-      "name": "Giày sneaker thể thao PQR",
-      "image": "https://via.placeholder.com/200x200",
-      "originalPrice": 700000,
-      "discountPrice": 650000,
-      "rating": 3
-  }
-]
+{
+  "products": [
+    {
+      "name": "Giày da cao cấp",
+      "category": "giay-nam",
+      "price": "1.200.000đ",
+      "image": "img/giay1.jpg",
+      "description": "Giày da nam cao cấp, kiểu dáng sang trọng."
+    },
+    {
+      "name": "Dép quai ngang",
+      "category": "dep-nam",
+      "price": "450.000đ",
+      "image": "img/dep1.jpg",
+      "description": "Dép quai ngang bền đẹp, thích hợp đi chơi."
+    },
+    {
+      "name": "Giày nữ thể thao",
+      "category": "giay-nu",
+      "price": "800.000đ",
+      "image": "img/giay-nu1.jpg",
+      "description": "Giày nữ năng động, thoải mái cả ngày."
+    },
+    {
+      "name": "Dép nữ cao gót",
+      "category": "dep-nu",
+      "price": "600.000đ",
+      "image": "img/dep-nu1.jpg",
+      "description": "Dép nữ cao gót phong cách Hàn Quốc."
+    }
+  ]
+}
+
