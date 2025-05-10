@@ -5,6 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chi tiết sản phẩm - Fullstore Fashion</title>
   <link rel="stylesheet" href="style.css">
+  <title>Sản phẩm theo danh mục</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .product img {
+      width: 120px;
+      height: auto;
+    }
+  </style>
+  <h1 id="page-title">Danh mục sản phẩm</h1>
+  <div id="product-list">Đang tải...</div>
+
+  <script>
+    // Lấy tham số từ URL
+    const params = new URLSearchParams(window.location.search);
+    const category = params.get("category");
+
+    // Đổi tiêu đề cho phù hợp
+    const titles = {
+      "giay-nam": "Giày Nam",
+      "dep-nam": "Dép Nam",
+      "giay-nu": "Giày Nữ",
+      "dep-nu": "Dép Nữ",
+      "thoi-trang-nam": "Thời Trang Nam",
+      "thoi-trang-nu": "Thời Trang Nữ",
+      "phu-kien-nam": "Phụ Kiện Nam",
+      "phu-kien-nu": "Phụ Kiện Nữ"
+    };
+    document.getElementById("page-title").innerText = titles[category] || "Sản phẩm";
+
+    // Tải dữ liệu từ JSON và lọc theo danh mục
+    fetch("example.json")
+      .then(res => res.json())
+      .then(data => {
+        const products = data.products.filter(p => p.category === category);
+        const container = document.getElementById("product-list");
+
+        if (products.length === 0) {
+          container.innerHTML = "<p>Không có sản phẩm nào.</p>";
+        } else {
+          container.innerHTML = "";
+          products.forEach(product => {
+            const item = document.createElement("div");
+            item.className = "product";
+            item.innerHTML = `
+              <img src="${product.image}" alt="${product.name}" />
+              <div>
+                <h3>${product.name}</h3>
+                <p>Giá: ${product.price}</p>
+                <p>${product.description}</p>
+              </div>
+            `;
+            container.appendChild(item);
+          });
+        }
+      })
+      .catch(err => {
+        document.getElementById("product-list").innerHTML = "<p>Lỗi tải dữ liệu.</p>";
+        console.error(err);
+      });
+  </script>
 </head>
 <body>
 
@@ -17,7 +88,6 @@
       <img src="images/banner.jpg" alt="Fashion Banner">
     </div>
   </header>
-
   <!-- Product Details Section -->
   <section class="product-detail">
     <div class="product-image">
