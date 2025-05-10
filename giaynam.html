@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Giày Nam</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Đảm bảo file CSS được liên kết -->
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar bộ lọc -->
+    <aside class="sidebar">
+      <h3>Dòng sản phẩm</h3>
+      <label><input type="checkbox" checked> Da</label><br>
+      <label><input type="checkbox"> Thể thao</label><br>
+      <label><input type="checkbox"> Boot</label>
+
+      <h3>Giá</h3>
+      <label for="priceRange">Khoảng giá:</label><br>
+      <input type="range" id="priceRange" min="0" max="5000000">
+      <p>0đ - 5.000.000đ</p>
+
+      <img src="https://via.placeholder.com/200x250?text=Banner" alt="Banner QC" class="banner">
+    </aside>
+
+    <!-- Danh sách sản phẩm -->
+    <main class="product-list">
+      <div class="header">
+        <p>Hiển thị <strong>1 - 4 / 100</strong> sản phẩm</p>
+        <select>
+          <option>Mới nhất</option>
+          <option>Bán chạy</option>
+          <option>Giá tăng dần</option>
+        </select>
+      </div>
+
+      <div class="products">
+        <div class="product">
+          <a href="chitiet.html" target="_blank">
+            <img src="https://via.placeholder.com/300x300?text=Giay+1" alt="Giày 1">
+          </a>
+          <p class="name">Giày da lười nam</p>
+          <div class="colors">
+            <span class="color black"></span>
+            <span class="color brown"></span>
+          </div>
+          <p class="price">1.200.000đ</p>
+          <p class="sold">(324 đã bán)</p>
+        </div>
+
+        <div class="product">
+          <a href="chitiet.html" target="_blank">
+            <img src="https://via.placeholder.com/300x300?text=Giay+2" alt="Giày 2">
+          </a>
+          <p class="name">Sneaker trắng</p>
+          <div class="colors">
+            <span class="color white"></span>
+            <span class="color gray"></span>
+          </div>
+          <p class="price">890.000đ</p>
+          <p class="sold">(198 đã bán)</p>
+        </div>
+
+        <!-- Thêm sản phẩm tương tự -->
+      </div>
+    </main>
+  </div>
+</body>
+</html>
