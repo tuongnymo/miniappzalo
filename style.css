@@ -240,12 +240,9 @@ body {
   font-family: 'Arial', sans-serif;
   font-size: 14px;
 
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  /* Thêm 2 dòng bên dưới để nền footer tràn full chiều ngang */
   width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 
 .footer a {
