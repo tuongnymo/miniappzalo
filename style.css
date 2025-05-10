@@ -239,10 +239,6 @@ body {
   padding: 40px 20px;
   font-family: 'Arial', sans-serif;
   font-size: 14px;
-
-  /* Thêm 2 dòng bên dưới để nền footer tràn full chiều ngang */
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
 }
 
 .footer a {
