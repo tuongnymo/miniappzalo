@@ -352,3 +352,7 @@ body {
 .grid-container img:hover {
   transform: scale(1.03);
 }
+.footer {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
