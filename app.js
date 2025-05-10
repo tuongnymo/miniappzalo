@@ -1,50 +1,45 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const productList = document.getElementById('product-list');
+document.addEventListener('DOMContentLoaded', function () {
+  const urlParams = new URLSearchParams(window.location.search);
+  const category = urlParams.get('category');
 
-  // Lấy dữ liệu từ example.json
+  const categoryNames = {
+    'giay-nam': 'Giày Nam',
+    'dep-nam': 'Dép Nam',
+    'giay-nu': 'Giày Nữ',
+    'dep-nu': 'Dép Nữ',
+    'thoi-trang-nam': 'Thời Trang Nam',
+    'thoi-trang-nu': 'Thời Trang Nữ'
+  };
+
+  const displayName = categoryNames[category] || 'Danh mục';
+
+  // Gắn vào tiêu đề và breadcrumb nếu có
+  const titleEl = document.getElementById('category-title');
+  const nameEl = document.getElementById('category-name');
+  if (titleEl) titleEl.textContent = displayName;
+  if (nameEl) nameEl.textContent = displayName;
+
+  // Hiển thị sản phẩm
   fetch('example.json')
-      .then(response => response.json())
-      .then(data => {
-          // Hiển thị 8-12 sản phẩm đầu tiên
-          const products = data.slice(0, 12); // Lấy tối đa 12 sản phẩm
+    .then(res => res.json())
+    .then(data => {
+      const filtered = data.products.filter(p => p.category === category);
+      const container = document.getElementById('product-list');
+      const countDisplay = document.getElementById('count-display');
+      if (countDisplay) countDisplay.textContent = filtered.length;
 
-          products.forEach(product => {
-              const productItem = document.createElement('div');
-              productItem.classList.add('product-item');
-
-              productItem.innerHTML = `
-                  <img src="${product.image}" alt="${product.name}">
-                  <div class="name">${product.name}</div>
-                  <div class="price">${product.discountPrice}₫</div>
-                  <div class="old-price">${product.originalPrice}₫</div>
-                  <div class="stars">${'★'.repeat(product.rating)}${'☆'.repeat(5 - product.rating)}</div>
-              `;
-
-              productList.appendChild(productItem);
-          });
-      })
-      .catch(error => {
-          console.error('Error loading product data:', error);
+      filtered.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'product-card';
+        card.innerHTML = `
+          <img src="${p.image}" alt="${p.name}">
+          <h3>${p.name}</h3>
+          <p>${p.price}</p>
+        `;
+        container.appendChild(card);
       });
+    })
+    .catch(err => {
+      console.error('Lỗi khi tải dữ liệu sản phẩm:', err);
+    });
 });
-// Lấy tham số category từ URL
-const params = new URLSearchParams(window.location.search);
-const category = params.get("category");
-
-// Mapping category → tên hiển thị tiếng Việt
-const categoryNames = {
-  "giay-nam": "Giày nam",
-  "dep-nam": "Dép nam",
-  "giay-nu": "Giày nữ",
-  "dep-nu": "Dép nữ",
-  "thoi-trang-nam": "Thời trang nam",
-  "thoi-trang-nu": "Thời trang nữ"
-};
-
-// Gắn nội dung vào breadcrumb
-const breadcrumb = document.getElementById("breadcrumb");
-breadcrumb.innerHTML = `
-  <a href="index.html">Trang chủ</a> &gt; 
-  <span>Danh mục</span> &gt; 
-  <strong>${categoryNames[category] || "Sản phẩm"}</strong>
-`;
