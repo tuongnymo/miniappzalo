@@ -239,6 +239,8 @@ body {
   padding: 40px 20px;
   font-family: 'Arial', sans-serif;
   font-size: 14px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 
 .footer a {
@@ -351,8 +353,4 @@ body {
 
 .grid-container img:hover {
   transform: scale(1.03);
-}
-.footer {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
 }
