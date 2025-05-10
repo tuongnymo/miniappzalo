@@ -4,28 +4,28 @@
       "name": "Giày da cao cấp",
       "category": "giay-nam",
       "price": "1.200.000đ",
-      "image": "img/giay1.jpg",
+      "image": "https://i.imgur.com/IvQMoRA.jpeg",
       "description": "Giày da nam cao cấp, kiểu dáng sang trọng."
     },
     {
       "name": "Dép quai ngang",
       "category": "dep-nam",
       "price": "450.000đ",
-      "image": "img/dep1.jpg",
+      "image": "https://i.imgur.com/MUVQaXS.jpeg",
       "description": "Dép quai ngang bền đẹp, thích hợp đi chơi."
     },
     {
-      "name": "Giày nữ thể thao",
+      "name": "Dép scandal nữ",
       "category": "giay-nu",
       "price": "800.000đ",
-      "image": "img/giay-nu1.jpg",
-      "description": "Giày nữ năng động, thoải mái cả ngày."
+      "image": "https://i.imgur.com/NMBVPck.jpeg",
+      "description": "Dép nữ năng động, thoải mái cả ngày."
     },
     {
       "name": "Dép nữ cao gót",
       "category": "dep-nu",
       "price": "600.000đ",
-      "image": "img/dep-nu1.jpg",
+      "image": "https://i.imgur.com/wEkZCZS.jpeg",
       "description": "Dép nữ cao gót phong cách Hàn Quốc."
     }
   ]
