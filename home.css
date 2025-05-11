@@ -83,21 +83,22 @@ body {
 }
 
 .collections {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 10px;
+  padding: 0 10px; /* Canh lề trái phải */
+  box-sizing: border-box;
 }
 
-.row {
+.collections .row {
   display: flex;
+  justify-content: space-between;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
-.row img {
-  width: 100%;
+.collections .row img {
+  width: 50%;
   height: auto;
-  flex: 1;
+  object-fit: cover;
+  display: block;
 }
 
 .user-btn {
