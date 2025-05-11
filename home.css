@@ -144,18 +144,6 @@ body {
 .dots {
   margin-top: 10px;
 }
-.dot {
-  height: 10px;
-  width: 10px;
-  margin: 0 3px;
-  background-color: #ccc;
-  border-radius: 50%;
-  display: inline-block;
-}
-.dot.active {
-  background-color: #444;
-}
-
 .collection-banner img {
   width: 100%;
   margin-top: 10px;
@@ -192,9 +180,29 @@ body {
   width: 100%;
   border-radius: 5px;
 }
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 10px;
+}
+
+.product-item {
+  width: 48%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.product-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
 .colors {
   margin: 5px 0;
 }
+
 .color {
   height: 12px;
   width: 12px;
@@ -203,17 +211,26 @@ body {
   border-radius: 50%;
   border: 1px solid #ccc;
 }
+
 .color.active {
   border: 2px solid #000;
 }
+
 .price {
   color: red;
   font-weight: bold;
+  margin: 4px 0;
 }
-.rating {
+
+.meta {
   font-size: 14px;
+  color: #555;
 }
+
+.stars {
+  color: #aaa;
+}
+
 .sold {
   margin-left: 10px;
-  color: #666;
 }
