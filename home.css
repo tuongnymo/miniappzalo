@@ -179,7 +179,10 @@ body {
 }
 .product-item img {
   width: 100%;
-  border-radius: 5px;
+  height: 300px; /* hoặc chiều cao bạn muốn */
+  object-fit: cover;
+  display: block;
+  border-radius: 6px; /* bo nhẹ cho đẹp, tùy chọn */
 }
 .product-list {
   display: flex;
