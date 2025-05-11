@@ -3,63 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang sản phẩm</title>
-  <link rel="stylesheet" href="common.css">
+  <title>Giày nam</title>
   <link rel="stylesheet" href="product.css">
 </head>
 <body>
+  <link rel="stylesheet" href="product.css">
+  <div class="container">
+    <h1 class="product-title">Giày nam</h1>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">
-      <img src="https://i.imgur.com/uKvrhIO.png" alt="Logo">
+    <div class="filter-sort">
+      <label for="sort">Sắp xếp:</label>
+      <select id="sort">
+        <option value="default">Mặc định</option>
+        <option value="asc">Giá tăng dần</option>
+        <option value="desc">Giá giảm dần</option>
+      </select>
     </div>
-    <nav class="nav-menu">
-      <a href="products.html?category=giay-nam">Giày Nam</a>
-      <a href="products.html?category=giay-nu">Giày Nữ</a>
-      <a href="products.html?category=dep-nam">Dép Nam</a>
-      <a href="products.html?category=dep-nu">Dép Nữ</a>
-    </nav>
-  </header>
 
-  <div class="main-container">
-    <!-- Sidebar với bộ lọc -->
-    <aside class="sidebar">
-      <h3>Dòng sản phẩm</h3>
-      <label><input type="checkbox" checked> Giày Nam</label><br>
-      <label><input type="checkbox"> Giày Nữ</label><br>
-      <label><input type="checkbox"> Dép Nam</label><br>
-      <label><input type="checkbox"> Dép Nữ</label><br>
-
-      <h3>Khoảng giá</h3>
-      <input type="range" min="0" max="5000000" value="5000000">
-      <p>0đ - 5.000.000đ</p>
-
-      <!-- Quảng cáo -->
-      <img src="https://via.placeholder.com/200x250?text=Mua+sắm+trực+tuyến" alt="QC" class="ad-banner">
-    </aside>
-
-    <!-- Sản phẩm -->
-    <section class="product-section">
-      <div class="product-header">
-        <h1>Sản phẩm</h1>
-        <select>
-          <option>Mới nhất</option>
-          <option>Giá tăng dần</option>
-          <option>Giá giảm dần</option>
-        </select>
+    <div class="product-grid">
+      <div class="product-item">
+        <img src="https://i.imgur.com/BfkxgBS.jpeg" alt="Giày 1">
+        <p>Giày thể thao nam</p>
+        <p class="price">495,000đ</p>
       </div>
-
-      <div class="product-grid" id="product-list">
-        <!-- Các sản phẩm sẽ được hiển thị ở đây -->
+      <div class="product-item">
+        <img src="https://i.imgur.com/kBJRBE9.jpeg" alt="Giày 2">
+        <p>Giày lười nam</p>
+        <p class="price">695,000đ</p>
       </div>
-    </section>
+      <div class="product-item">
+        <img src="https://i.imgur.com/hr3svSA.jpeg" alt="Giày 3">
+        <p>Giày công sở</p>
+        <p class="price">585,000đ</p>
+      </div>
+      <div class="product-item">
+        <img src="https://i.imgur.com/lpJnLdT.jpeg" alt="Giày 4">
+        <p>Giày sneaker</p>
+        <p class="price">780,000đ</p>
+      </div>
+    </div>
   </div>
-
-  <footer>
-    <p>&copy; 2025 Fullstore Fashion. Tất cả quyền được bảo vệ</p>
-  </footer>
-
-  <script src="app.js"></script>
 </body>
 </html>
