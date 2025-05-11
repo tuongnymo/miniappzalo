@@ -234,3 +234,95 @@ body {
 .sold {
   margin-left: 10px;
 }
+.footer {
+  background: #1f1d1d;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+}
+
+.footer-section h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.footer .certification {
+  margin-top: 10px;
+  max-width: 140px;
+}
+
+.socials li img {
+  width: 18px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.subscribe form {
+  display: flex;
+  margin: 10px 0;
+}
+
+.subscribe input[type="email"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 2px 0 0 2px;
+}
+
+.subscribe button {
+  background: #000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+}
+
+.subscribe button:hover {
+  background: #444;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.footer-bottom img {
+  vertical-align: middle;
+  height: 24px;
+  margin: 0 5px;
+}
