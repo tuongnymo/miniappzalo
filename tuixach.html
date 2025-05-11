@@ -1,0 +1,48 @@
+<!-- tui-xach.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Túi xách - Fullstore</title>
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+  <h1 class="product-title">Túi xách</h1>
+  <script>
+fetch('example.json')
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById('product-list');
+    const filtered = data.filter(p => p.category === 'giay-nam');
+    container.innerHTML = filtered.map(p => `
+      <div class="product-item">
+        <img src="${p.image}" alt="${p.name}">
+        <p>${p.name}</p>
+        <p class="price">${p.price}</p>
+      </div>
+    `).join('');
+  });
+</script>
+
+  <div class="filter-sort">
+    <label for="sort">Sắp xếp:</label>
+    <select id="sort">
+      <option value="default">Mặc định</option>
+      <option value="asc">Giá tăng dần</option>
+      <option value="desc">Giá giảm dần</option>
+    </select>
+  </div>
+
+  <div class="product-grid" id="product-list">
+    <div class="product-item">
+      <img src="https://i.imgur.com/4FNCIil.jpeg" alt="Túi đeo chéo nữ">
+      <p>Túi đeo chéo nữ</p>
+      <p class="price">380,000đ</p>
+    </div>
+    <!-- Thêm sản phẩm khác tùy chọn -->
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
