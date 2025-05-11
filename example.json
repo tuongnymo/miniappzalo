@@ -1,33 +1,38 @@
-{
-  "products": [
-    {
-      "name": "Giày da cao cấp",
-      "category": "giay-nam",
-      "price": "1.200.000đ",
-      "image": "https://i.imgur.com/IvQMoRA.jpeg",
-      "description": "Giày da nam cao cấp, kiểu dáng sang trọng."
-    },
-    {
-      "name": "Dép quai ngang",
-      "category": "dep-nam",
-      "price": "450.000đ",
-      "image": "https://i.imgur.com/MUVQaXS.jpeg",
-      "description": "Dép quai ngang bền đẹp, thích hợp đi chơi."
-    },
-    {
-      "name": "Dép scandal nữ",
-      "category": "giay-nu",
-      "price": "800.000đ",
-      "image": "https://i.imgur.com/NMBVPck.jpeg",
-      "description": "Dép nữ năng động, thoải mái cả ngày."
-    },
-    {
-      "name": "Dép nữ cao gót",
-      "category": "dep-nu",
-      "price": "600.000đ",
-      "image": "https://i.imgur.com/wEkZCZS.jpeg",
-      "description": "Dép nữ cao gót phong cách Hàn Quốc."
-    }
-  ]
-}
-
+[
+  {
+    "id": 1,
+    "name": "Giày thể thao nam",
+    "image": "https://i.imgur.com/BfkxgBS.jpeg",
+    "price": 495000,
+    "colors": ["#244a7b", "#e5e5e5"],
+    "sold": 315,
+    "category": "giay-nam"
+  },
+  {
+    "id": 2,
+    "name": "Giày cao gót nữ",
+    "image": "https://i.imgur.com/EhmSOG9.jpeg",
+    "price": 695000,
+    "colors": ["#e5e5e5", "#f35b5b"],
+    "sold": 280,
+    "category": "giay-nu"
+  },
+  {
+    "id": 3,
+    "name": "Túi xách da cao cấp",
+    "image": "https://i.imgur.com/4FNCIil.jpeg",
+    "price": 850000,
+    "colors": ["#000000", "#999999"],
+    "sold": 190,
+    "category": "tui-xach"
+  },
+  {
+    "id": 4,
+    "name": "Kính thời trang",
+    "image": "https://i.imgur.com/gvvjPVN.jpeg",
+    "price": 210000,
+    "colors": ["#c0c0c0", "#222222"],
+    "sold": 155,
+    "category": "phu-kien"
+  }
+]
