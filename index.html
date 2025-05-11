@@ -1,212 +1,68 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zalo Mini App - Fashion</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JM Dress Design</title>
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
   <!-- Header -->
   <header class="header">
-    <div class="logo">
-      <img src="https://i.imgur.com/uKvrhIO.png" alt="Logo" />
+    <div class="header-top">
+      <button class="menu-btn">☰</button>
+      <div class="logo">JM DRESS DESIGN</div>
+      <div class="header-icons">
+        <span>🔍</span>
+        <span>♡</span>
+        <span>🛒</span>
+      </div>
     </div>
-    <nav class="nav-menu">
-      <a href="#">SALE</a>
-      <a href="#">ĐẦM</a>
-      <a href="#">ÁO</a>
-      <a href="#">QUẦN</a>
-      <a href="#">CHÂN VÁY</a>
-      <a href="#">ÁO KHOÁC</a>
-      <a href="#">LOOKBOOK</a>
-      <a href="#">RESORT 2025</a>
+
+    <nav class="nav-tabs">
+      <a href="#">ĐỒ ĐI LÀM</a>
+      <a href="#">ĐỒ ĐI CHƠI</a>
+      <a href="#">ĐỒ ĐI TIỆC</a>
+      <a href="#" class="highlight">XU HƯỚNG</a>
     </nav>
-    <div class="icons">
-      ❤️ 🛒 👤
+
+    <div class="info-buttons">
+      <button class="red">GIẢM GIÁ</button>
+      <button>Chính sách bảo hành</button>
+      <button>Thông tin vận chuyển</button>
+      <button>Hệ thống cửa hàng</button>
     </div>
   </header>
 
-  <!-- Info Bar -->
-   <!-- Phần thông tin vận chuyển -->
-  <section class="info-bar">
-    <div>🏪 Hệ thống cửa hàng</div>
-    <div>🚚 Thông tin vận chuyển</div>
-    <div>🎁 Chính sách tích điểm</div>
-  </section>
-
-  <!-- Nội dung chính sẽ bắt đầu từ đây -->
-  <!-- Banner -->
-   <div class="main-container">
-   <section class="banner">
-    <div class="banner-wrapper">
-        <img src="https://i.imgur.com/MhISrz6.png" alt="Banner 1">
-        <img src="https://i.imgur.com/2s9vRnI.png" alt="Banner 2">
-      </div>
-          
-  </section>
-    <!-- Các phần khác trong trang -->
-</div>
-  <!-- Search -->
-  <section class="search-section">
-    <input type="text" placeholder="Bạn muốn tìm sản phẩm gì?" />
-    <button>Tìm kiếm ngay</button>
-  </section>
-
-  <!-- Category Icons -->
-  <section class="categories">
-    <a href="product.html?category=giay-nam" class="category">
-  <img src="https://i.imgur.com/REkfZkB.jpeg" alt="Giày nam" />
-  <p>GIÀY NAM</p>
-</a>
-    <a href="product.html?category=dep-nam" class="category">
-  <img src="https://i.imgur.com/sF6fA7o.jpeg" alt="Dép nam" />
-  <p>DÉP NAM</p>
-</a>
-
-<a href="product.html?category=giay-nu" class="category">
-  <img src="https://i.imgur.com/wEkZCZS.jpeg" alt="Giày nữ" />
-  <p>GIÀY NỮ</p>
-</a>
-
-<a href="product.html?category=dep-nu" class="category">
-  <img src="https://i.imgur.com/NMBVPck.jpeg" alt="Dép nữ" />
-  <p>DÉP NỮ</p>
-</a>
-
-  <section class="image-grid">
-    <div class="grid-container">
-      <img src="https://i.imgur.com/2wjx0vi.jpeg" alt="Banner 1">
-      <img src="https://i.imgur.com/kbb9XB8.jpeg" alt="Banner 2">
-      <img src="https://i.imgur.com/pr6hWqY.jpegs" alt="Banner 3">
-      <img src="https://i.imgur.com/LO6hvyK.jpeg" alt="Banner 4">
-      <img src="https://i.imgur.com/ajolhc1.jpeg" alt="Banner 5">
-      <img src="https://i.imgur.com/CFIsSyM.jpeg" alt="Banner 6">
-    </div>
-  </section>
-  
-  <section class="best-sellers">
-    <h2>SẢN PHẨM BÁN CHẠY</h2>
-    <div class="product-list">
-      
-      <div class="product-card">
-        <img src="https://i.imgur.com/7hDMQRH.jpeg" alt="Sản phẩm" />
-        <p>Chân váy đổ 2 tầng dan dây</p>
-        <div class="colors">
-          <span class="color-circle"></span>
-          <span class="color-circle"></span>
-        </div>
-        <div class="price">595,000đ</div>
-        <div class="rating">⭐ (5) <span>(315 đã bán)</span></div>
-      </div>
-  
-      <div class="product-card">
-        <img src="https://i.imgur.com/R6CUWWU.jpeg" alt="Sản phẩm" />
-        <p>Đầm cổ tròn dáng suông chấm bi</p>
-        <div class="colors">
-          <span class="color-circle selected"></span>
-        </div>
-        <div class="price">795,000đ</div>
-        <div class="rating">⭐ (5) <span>(280 đã bán)</span></div>
-      </div>
-  
-      <div class="product-card">
-        <img src="https://i.imgur.com/xrexQel.jpeg" alt="Sản phẩm" />
-        <p>Chân A 2 túi ốp</p>
-        <div class="colors">
-          <span class="color-circle"></span>
-          <span class="color-circle selected"></span>
-        </div>
-        <div class="price">495,000đ</div>
-        <div class="rating">⭐ (5) <span>(315 đã bán)</span></div>
-      </div>
-  
-      <div class="product-card">
-        <img src="https://i.imgur.com/KIP324a.jpeg" alt="Sản phẩm" />
-        <p>Đầm 2 dây</p>
-        <div class="colors">
-          <span class="color-circle"></span>
-          <span class="color-circle selected"></span>
-        </div>
-        <div class="price">415,000đ</div>
-        <div class="rating">⭐ (5) <span>(239 đã bán)</span></div>
-      </div>
-      
-      <div class="product-card">
-        <img src="https://i.imgur.com/ccY1j5m.jpeg" alt="Sản phẩm" />
-        <p>Váy công sở</p>
-        <div class="colors">
-          <span class="color-circle"></span>
-          <span class="color-circle selected"></span>
-        </div>
-        <div class="price">515,000đ</div>
-        <div class="rating">⭐ (5) <span>(289 đã bán)</span></div>
-      </div>
+  <!-- Banner / Slider -->
+  <section class="slider">
+    <img src="your-banner-image.jpg" alt="Banner chính">
+    <button class="see-more">Xem Thêm</button>
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-col">
-        <h4>FULLSTORE FASHION</h4>
-        <ul>
-          <li><a href="#">Giới thiệu</a></li>
-          <li><a href="#">Tin tức</a></li>
-          <li><a href="#">Cửa hàng</a></li>
-          <li><a href="#">Thông tin tuyển dụng</a></li>
-          <li><a href="#">Hợp tác kinh doanh</a></li>
-        </ul>
-        <img src="https://i.imgur.com/mvioZPo.png" alt="Đã thông báo Bộ Công Thương" />
-      </div>
-  
-      <div class="footer-col">
-        <h4>LIÊN KẾT VỚI CHÚNG TÔI</h4>
-        <ul>
-          <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-          <li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
-          <li><a href="mailto:marketing@jm.com.vn"><i class="fas fa-envelope"></i> Email: tuongtamduc133@gmail.com.vn</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer-col">
-        <h4>CHĂM SÓC KHÁCH HÀNG</h4>
-        <ul>
-          <li><a href="#">Chính sách vận chuyển</a></li>
-          <li><a href="#">Chính sách tích điểm</a></li>
-          <li><a href="#">Chính sách đổi trả</a></li>
-          <li><a href="#">Chính sách bảo mật</a></li>
-          <li><a href="#">Bảo hành trọn đời</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer-col">
-        <h4>ĐĂNG KÝ MAIL NHẬN ƯU ĐÃI TỪ Fullstore Fashion</h4>
-        <form>
-          <input type="email" placeholder="Nhập email của bạn" required />
-          <button type="submit">GỬI NGAY</button>
-        </form>
-        <p>
-          Bằng cách nhấp vào nút <strong>ĐĂNG KÝ</strong>, bạn đồng ý với
-          <a href="#">Chính sách bảo mật</a> và cookie của chúng tôi.<br>
-          Vui lòng <a href="#">ĐĂNG NHẬP</a> nếu bạn đã có tài khoản.
-        </p>
-      </div>
+  <!-- Bộ sưu tập -->
+  <section class="collections">
+    <div class="row">
+      <img src="collection1.jpg" alt="Bộ sưu tập 1">
+      <img src="collection2.jpg" alt="Bộ sưu tập 2">
     </div>
-  
-    <div class="footer-bottom">
-      <p>©2020-2025 All Rights Reserved</p>
-      <p>
-        HỘ KINH DOANH FULLSTORE<br>
-        Trụ sở chính: Số 83 Đền Lừ, Phường Hoàng Văn Thụ, Quận Hoàng Mai, Hà Nội<br>
-        Giấy chứng nhận ĐKKD số 0110596586 do Sở KHĐT TP Hà Nội cấp lần đầu ngày 10/01/2023
-      </p>
-      <div class="payment-icons">
-        <img src="https://i.imgur.com/MlCIkGT.png" alt="Thanh toán" />
-      </div>
+    <div class="row">
+      <img src="collection3.jpg" alt="Bộ sưu tập 3">
+      <div class="user-btn">👤</div>
     </div>
-  </footer>
+  </section>
+
+  <!-- Danh mục sản phẩm -->
+  <section class="product-title">
+    <h2>DANH MỤC SẢN PHẨM</h2>
+  </section>
 
 </body>
 </html>
