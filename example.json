@@ -2,37 +2,29 @@
   {
     "id": 1,
     "name": "Giày thể thao nam",
-    "image": "https://i.imgur.com/BfkxgBS.jpeg",
     "price": 495000,
-    "colors": ["#244a7b", "#e5e5e5"],
-    "sold": 315,
+    "image": "link1",
     "category": "giay-nam"
   },
   {
     "id": 2,
     "name": "Giày cao gót nữ",
-    "image": "https://i.imgur.com/EhmSOG9.jpeg",
-    "price": 695000,
-    "colors": ["#e5e5e5", "#f35b5b"],
-    "sold": 280,
+    "price": 685000,
+    "image": "link2",
     "category": "giay-nu"
   },
   {
     "id": 3,
-    "name": "Túi xách da cao cấp",
-    "image": "https://i.imgur.com/4FNCIil.jpeg",
+    "name": "Túi xách da",
     "price": 850000,
-    "colors": ["#000000", "#999999"],
-    "sold": 190,
+    "image": "link3",
     "category": "tui-xach"
   },
   {
     "id": 4,
-    "name": "Kính thời trang",
-    "image": "https://i.imgur.com/gvvjPVN.jpeg",
-    "price": 210000,
-    "colors": ["#c0c0c0", "#222222"],
-    "sold": 155,
+    "name": "Đồng hồ thời trang",
+    "price": 1200000,
+    "image": "link4",
     "category": "phu-kien"
   }
 ]
