@@ -413,20 +413,21 @@ body {
   color: #d0021b;
   font-weight: bold;
 }
-/* Ghim phần header, menu, thông tin vận chuyển */
+/* Ghim toàn bộ phần từ header đến thông tin vận chuyển */
 .header, .info-bar {
   position: sticky;
-  top: 0; /* Ghim phần tử này ở trên cùng */
-  z-index: 1000; /* Đảm bảo phần tử này ở trên cùng */
+  top: 0;
+  z-index: 1000;
   background-color: white; /* Thêm nền trắng để tránh bị mờ */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nếu muốn */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Thêm bóng đổ nếu muốn */
 }
 
-/* Đảm bảo khi cuộn đến dòng thông tin vận chuyển, nội dung sau đó sẽ cuộn */
-.main-content {
-  margin-top: 120px; /* Điều chỉnh giá trị này để bắt đầu phần nội dung sau header */
+/* Đảm bảo phần còn lại của nội dung cuộn bình thường */
+.main-container {
+  margin-top: 140px;  /* Điều chỉnh giá trị này sao cho phù hợp với chiều cao của phần ghim */
 }
 
+/* Đảm bảo banner không bị ghim */
 .banner {
-  margin-top: 60px; /* Đảm bảo banner không bị ghim */
+  margin-top: 20px;
 }
