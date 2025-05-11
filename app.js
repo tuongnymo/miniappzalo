@@ -44,24 +44,49 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 document.addEventListener('DOMContentLoaded', function () {
-  const productList = [
-    { name: 'Đầm có tròn dáng suông chân phối túi', price: '795,000đ', image: 'https://i.imgur.com/7hDMQRH.jpeg', rating: 5, sold: 280 },
-    { name: 'Đầm có nam dan dây dáng dài', price: '785,000đ', image: 'https://i.imgur.com/R6CUWWU.jpeg', rating: 5, sold: 308 },
-    { name: 'Đầm có tròn chân bồ đỏ', price: '755,000đ', image: 'https://i.imgur.com/xrexQel.jpeg', rating: 5, sold: 200 },
-    { name: 'Đầm dáng ôm A 2 dai', price: '785,000đ', image: 'https://i.imgur.com/KIP324a.jpeg', rating: 4, sold: 239 },
-    // Thêm 20 sản phẩm nữa theo mẫu trên
-  ];
+  const urlParams = new URLSearchParams(window.location.search);
+  const category = urlParams.get('category');  // Lấy tham số 'category' từ URL
 
+  const categoryNames = {
+    'giay-nam': 'Giày Nam',
+    'dep-nam': 'Dép Nam',
+    'giay-nu': 'Giày Nữ',
+    'dep-nu': 'Dép Nữ'
+  };
+
+  const displayName = categoryNames[category] || 'Danh mục';
+
+  // Gắn vào tiêu đề và breadcrumb
+  const titleEl = document.querySelector('.product-header h1');
+  if (titleEl) titleEl.textContent = `Danh mục: ${displayName}`;
+
+  // Dữ liệu sản phẩm (Chỉ lấy sản phẩm "Giày Nam")
+  const productsData = {
+    "giay-nam": [
+      { name: 'Giày da cao cấp', price: '1.200.000đ', image: 'https://i.imgur.com/IvQMoRA.jpeg', rating: 5, sold: 150 },
+      { name: 'Giày thể thao nam', price: '950.000đ', image: 'https://i.imgur.com/vGgRYcG.jpeg', rating: 4, sold: 100 },
+      { name: 'Giày công sở nam', price: '850.000đ', image: 'https://i.imgur.com/2Fx9QmO.jpeg', rating: 5, sold: 200 }
+    ],
+    "dep-nam": [
+      // Dữ liệu dép nam
+    ],
+    // Các danh mục khác
+  };
+
+  // Lọc và hiển thị sản phẩm theo danh mục
   const productGrid = document.querySelector('.product-grid');
-  productList.forEach(product => {
-    const productCard = document.createElement('div');
-    productCard.className = 'product-card';
-    productCard.innerHTML = `
-      <img src="${product.image}" alt="${product.name}">
-      <h3>${product.name}</h3>
-      <p class="price">${product.price}</p>
-      <div class="rating">⭐ (${product.rating}) <span>(${product.sold} đã bán)</span></div>
-    `;
-    productGrid.appendChild(productCard);
-  });
+  if (category && productsData[category]) {
+    const filteredProducts = productsData[category];
+    filteredProducts.forEach(product => {
+      const productCard = document.createElement('div');
+      productCard.className = 'product-card';
+      productCard.innerHTML = `
+        <img src="${product.image}" alt="${product.name}">
+        <h3>${product.name}</h3>
+        <p class="price">${product.price}</p>
+        <div class="rating">⭐ (${product.rating}) <span>(${product.sold} đã bán)</span></div>
+      `;
+      productGrid.appendChild(productCard);
+    });
+  }
 });

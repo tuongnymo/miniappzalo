@@ -8,35 +8,40 @@
 </head>
 <body>
 
+  <!-- Header -->
   <header class="header">
     <div class="logo">
       <img src="https://i.imgur.com/uKvrhIO.png" alt="Logo">
     </div>
     <nav class="nav-menu">
       <a href="#">SALE</a>
-      <a href="#">ĐẦM</a>
-      <a href="#">ÁO</a>
-      <a href="#">QUẦN</a>
-      <a href="#">CHÂN VÁY</a>
+      <a href="products.html?category=giay-nam">Giày Nam</a>
+      <a href="products.html?category=dep-nam">Dép Nam</a>
+      <a href="products.html?category=giay-nu">Giày Nữ</a>
+      <a href="products.html?category=dep-nu">Dép Nữ</a>
     </nav>
   </header>
 
+  <!-- Main content -->
   <div class="main-container">
-    <!-- Sidebar với bộ lọc -->
     <aside class="sidebar">
       <h3>Dòng sản phẩm</h3>
-      <label><input type="checkbox" checked> Đầm</label><br>
-      <label><input type="checkbox"> Áo</label><br>
-      <label><input type="checkbox"> Quần</label><br>
+      <label><input type="checkbox" checked> Giày Nam</label><br>
+      <label><input type="checkbox"> Giày Nữ</label><br>
+      <label><input type="checkbox"> Dép Nam</label><br>
+      <label><input type="checkbox"> Dép Nữ</label><br>
+
       <h3>Khoảng giá</h3>
       <input type="range" min="0" max="5000000" value="5000000">
       <p>0đ - 5.000.000đ</p>
+
+      <!-- Quảng cáo -->
+      <img src="https://via.placeholder.com/200x250?text=Mua+sắm+trực+tuyến" alt="QC" class="ad-banner">
     </aside>
 
-    <!-- Phần sản phẩm -->
     <section class="product-section">
       <div class="product-header">
-        <h1>Sản phẩm</h1>
+        <h1>Danh mục: Giày Nam</h1>
         <select>
           <option>Mới nhất</option>
           <option>Giá tăng dần</option>
@@ -44,8 +49,8 @@
         </select>
       </div>
 
-      <div class="product-grid">
-        <!-- Sản phẩm sẽ được thêm vào đây -->
+      <div class="product-grid" id="product-list">
+        <!-- Các sản phẩm Giày Nam sẽ được render vào đây -->
       </div>
     </section>
   </div>

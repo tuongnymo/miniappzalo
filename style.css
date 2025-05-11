@@ -430,7 +430,6 @@ body {
 .banner {
   margin-top: 60px; /* Đảm bảo banner không bị ghim */
 }
-/* Cơ bản */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -464,7 +463,7 @@ body {
 
 /* Phần sản phẩm */
 .product-section {
-  margin-left: 270px; /* Tạo khoảng cách giữa sidebar và sản phẩm */
+  margin-left: 270px;
   padding: 20px;
 }
 
@@ -512,16 +511,27 @@ body {
   color: #777;
 }
 
-.product-card .price {
-  font-size: 14px;
-  font-weight: bold;
-  color: red;
-}
-
-/* Phần footer */
 footer {
   text-align: center;
   background-color: #f4f4f4;
   padding: 20px 0;
   margin-top: 20px;
+}
+
+.ad-banner {
+  width: 100%;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
 }
