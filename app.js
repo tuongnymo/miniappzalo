@@ -49,8 +49,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const categoryNames = {
     'giay-nam': 'Giày Nam',
-    'dep-nam': 'Dép Nam',
     'giay-nu': 'Giày Nữ',
+    'dep-nam': 'Dép Nam',
     'dep-nu': 'Dép Nữ'
   };
 
@@ -58,19 +58,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Gắn vào tiêu đề và breadcrumb
   const titleEl = document.querySelector('.product-header h1');
-  if (titleEl) titleEl.textContent = `Danh mục: ${displayName}`;
+  if (titleEl) titleEl.textContent = `${displayName}`;
 
-  // Dữ liệu sản phẩm (Chỉ lấy sản phẩm "Giày Nam")
+  // Dữ liệu sản phẩm (mỗi danh mục sẽ có sản phẩm riêng)
   const productsData = {
     "giay-nam": [
       { name: 'Giày da cao cấp', price: '1.200.000đ', image: 'https://i.imgur.com/IvQMoRA.jpeg', rating: 5, sold: 150 },
       { name: 'Giày thể thao nam', price: '950.000đ', image: 'https://i.imgur.com/vGgRYcG.jpeg', rating: 4, sold: 100 },
-      { name: 'Giày công sở nam', price: '850.000đ', image: 'https://i.imgur.com/2Fx9QmO.jpeg', rating: 5, sold: 200 }
+      { name: 'Giày công sở nam', price: '850.000đ', image: 'https://i.imgur.com/2Fx9QmO.jpeg', rating: 5, sold: 200 },
+      // Thêm các sản phẩm Giày Nam khác ở đây
+    ],
+    "giay-nu": [
+      { name: 'Giày búp bê nữ', price: '850.000đ', image: 'https://i.imgur.com/2Fw43Hf.jpeg', rating: 4, sold: 120 },
+      { name: 'Giày cao gót nữ', price: '1.100.000đ', image: 'https://i.imgur.com/Kn3pQvF.jpeg', rating: 5, sold: 180 },
+      // Thêm các sản phẩm Giày Nữ khác ở đây
     ],
     "dep-nam": [
-      // Dữ liệu dép nam
+      { name: 'Dép sandal nam', price: '350.000đ', image: 'https://i.imgur.com/7hDMQRH.jpeg', rating: 5, sold: 300 },
+      // Thêm các sản phẩm Dép Nam khác ở đây
     ],
-    // Các danh mục khác
+    "dep-nu": [
+      { name: 'Dép nữ cao gót', price: '500.000đ', image: 'https://i.imgur.com/R6CUWWU.jpeg', rating: 4, sold: 200 },
+      // Thêm các sản phẩm Dép Nữ khác ở đây
+    ]
   };
 
   // Lọc và hiển thị sản phẩm theo danh mục
