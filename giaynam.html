@@ -9,21 +9,6 @@
 </head>
 <body>
   <h1 class="product-title">Giày nam</h1>
-  <script>
-fetch('example.json')
-  .then(res => res.json())
-  .then(data => {
-    const container = document.getElementById('product-list');
-    const filtered = data.filter(p => p.category === 'giay-nam');
-    container.innerHTML = filtered.map(p => `
-      <div class="product-item">
-        <img src="${p.image}" alt="${p.name}">
-        <p>${p.name}</p>
-        <p class="price">${p.price}</p>
-      </div>
-    `).join('');
-  });
-</script>
 
   <div class="filter-sort">
     <label for="sort">Sắp xếp:</label>
@@ -35,14 +20,13 @@ fetch('example.json')
   </div>
 
   <div class="product-grid" id="product-list">
-    <div class="product-item">
-      <img src="https://i.imgur.com/BfkxgBS.jpeg" alt="Giày thể thao nam">
-      <p>Giày thể thao nam</p>
-      <p class="price">495,000đ</p>
-    </div>
-    <!-- Thêm sản phẩm khác tùy chọn -->
+    <!-- Sản phẩm sẽ được hiển thị bằng JS -->
   </div>
 
+  <!-- Đặt trước khi gọi app.js -->
+  <script>
+    const CATEGORY = "giay-nam";
+  </script>
   <script src="app.js"></script>
 </body>
 </html>
