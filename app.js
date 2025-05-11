@@ -43,3 +43,25 @@ document.addEventListener('DOMContentLoaded', function () {
       console.error('Lỗi khi tải dữ liệu sản phẩm:', err);
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+  const productList = [
+    { name: 'Đầm có tròn dáng suông chân phối túi', price: '795,000đ', image: 'https://i.imgur.com/7hDMQRH.jpeg', rating: 5, sold: 280 },
+    { name: 'Đầm có nam dan dây dáng dài', price: '785,000đ', image: 'https://i.imgur.com/R6CUWWU.jpeg', rating: 5, sold: 308 },
+    { name: 'Đầm có tròn chân bồ đỏ', price: '755,000đ', image: 'https://i.imgur.com/xrexQel.jpeg', rating: 5, sold: 200 },
+    { name: 'Đầm dáng ôm A 2 dai', price: '785,000đ', image: 'https://i.imgur.com/KIP324a.jpeg', rating: 4, sold: 239 },
+    // Thêm 20 sản phẩm nữa theo mẫu trên
+  ];
+
+  const productGrid = document.querySelector('.product-grid');
+  productList.forEach(product => {
+    const productCard = document.createElement('div');
+    productCard.className = 'product-card';
+    productCard.innerHTML = `
+      <img src="${product.image}" alt="${product.name}">
+      <h3>${product.name}</h3>
+      <p class="price">${product.price}</p>
+      <div class="rating">⭐ (${product.rating}) <span>(${product.sold} đã bán)</span></div>
+    `;
+    productGrid.appendChild(productCard);
+  });
+});
