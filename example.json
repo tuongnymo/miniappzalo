@@ -4,20 +4,83 @@
     "name": "Giày thể thao nam A1",
     "price": 850000,
     "image": "assets/images/giay1.jpg",
-    "category": "giay-nam"
+    "category": "giaynam"
   },
   {
     "id": 2,
     "name": "Giày sneaker nam B2",
     "price": 1050000,
     "image": "assets/images/giay2.jpg",
-    "category": "giay-nam"
+    "category": "giaynam"
   },
   {
     "id": 3,
     "name": "Giày cao cấp nam C3",
     "price": 1290000,
     "image": "assets/images/giay3.jpg",
-    "category": "giay-nam"
+    "category": "giaynam"
+  },
+  {
+    "id": 4,
+    "name": "Giày búp bê nữ D1",
+    "price": 720000,
+    "image": "assets/images/giaynu1.jpg",
+    "category": "giaynu"
+  },
+  {
+    "id": 5,
+    "name": "Giày cao gót nữ E2",
+    "price": 980000,
+    "image": "assets/images/giaynu2.jpg",
+    "category": "giaynu"
+  },
+  {
+    "id": 6,
+    "name": "Giày sandal nữ F3",
+    "price": 670000,
+    "image": "assets/images/giaynu3.jpg",
+    "category": "giaynu"
+  },
+  {
+    "id": 7,
+    "name": "Túi xách công sở G1",
+    "price": 1150000,
+    "image": "assets/images/tuixach1.jpg",
+    "category": "tuixach"
+  },
+  {
+    "id": 8,
+    "name": "Túi đeo chéo G2",
+    "price": 950000,
+    "image": "assets/images/tuixach2.jpg",
+    "category": "tuixach"
+  },
+  {
+    "id": 9,
+    "name": "Túi xách mini G3",
+    "price": 780000,
+    "image": "assets/images/tuixach3.jpg",
+    "category": "tuixach"
+  },
+  {
+    "id": 10,
+    "name": "Phụ kiện thời trang H1",
+    "price": 250000,
+    "image": "assets/images/phukien1.jpg",
+    "category": "phukien"
+  },
+  {
+    "id": 11,
+    "name": "Thắt lưng da H2",
+    "price": 390000,
+    "image": "assets/images/phukien2.jpg",
+    "category": "phukien"
+  },
+  {
+    "id": 12,
+    "name": "Mũ lưỡi trai H3",
+    "price": 180000,
+    "image": "assets/images/phukien3.jpg",
+    "category": "phukien"
   }
 ]
