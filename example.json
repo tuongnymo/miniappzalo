@@ -4,27 +4,27 @@
     "name": "Giày thể thao nam",
     "price": 495000,
     "image": "link1",
-    "category": "giay-nam"
+    "category": "giay-nam.html"
   },
   {
     "id": 2,
     "name": "Giày cao gót nữ",
     "price": 685000,
     "image": "link2",
-    "category": "giay-nu"
+    "category": "giay-nu.html"
   },
   {
     "id": 3,
     "name": "Túi xách da",
     "price": 850000,
     "image": "link3",
-    "category": "tui-xach"
+    "category": "tui-xach.html"
   },
   {
     "id": 4,
     "name": "Đồng hồ thời trang",
     "price": 1200000,
     "image": "link4",
-    "category": "phu-kien"
+    "category": "phu-kien.html"
   }
 ]
