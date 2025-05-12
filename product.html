@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Sản phẩm</title>
-  <link rel="stylesheet" href="product.css" />
+  <link rel="stylesheet" href="product.css">
 </head>
 <body>
   <header>
-    <h1>Danh sách sản phẩm</h1>
+    <nav>
+      <a href="index.html">Trang chủ</a> |
+      <a href="product.html?category=giay-nam">Giày Nam</a> |
+      <a href="product.html?category=giay-nu">Giày Nữ</a> |
+      <a href="product.html?category=tui-xach">Túi Xách</a> |
+      <a href="product.html?category=phu-kien">Phụ Kiện</a>
+    </nav>
   </header>
 
-  <main>
-    <div id="product-list" class="product-list"></div>
-  </main>
+  <h1>Danh sách sản phẩm</h1>
+  <div id="product-list"></div>
 
   <script src="app.js"></script>
 </body>

@@ -1,27 +1,30 @@
-const urlParams = new URLSearchParams(window.location.search);
-const category = urlParams.get('category');
+document.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const category = params.get("category");
+  const productList = document.getElementById("product-list");
 
-fetch('example.json')
-  .then(response => response.json())
-  .then(data => {
-    const productList = document.getElementById('product-list');
-    const filtered = data.filter(item => item.category === category);
+  fetch("example.json")
+    .then(res => res.json())
+    .then(data => {
+      const filtered = data.filter(p => p.category === category);
+      if (filtered.length === 0) {
+        productList.innerHTML = "<p>Không có sản phẩm nào.</p>";
+        return;
+      }
 
-    if (filtered.length === 0) {
-      productList.innerHTML = "<p>Không có sản phẩm nào trong danh mục này.</p>";
-    } else {
       filtered.forEach(product => {
-        const html = `
-          <div class="product">
-            <img src="${product.image}" alt="${product.name}">
-            <h3>${product.name}</h3>
-            <p>${product.price.toLocaleString()} VND</p>
-          </div>`;
-        productList.innerHTML += html;
+        const div = document.createElement("div");
+        div.className = "product";
+        div.innerHTML = `
+          <img src="${product.image}" alt="${product.name}">
+          <h3>${product.name}</h3>
+          <p>${product.price}₫</p>
+        `;
+        productList.appendChild(div);
       });
-    }
-  })
-  .catch(error => {
-    console.error("Lỗi khi tải JSON:", error);
-    document.getElementById('product-list').innerHTML = "<p>Lỗi tải sản phẩm!</p>";
-  });
+    })
+    .catch(err => {
+      productList.innerHTML = "<p>Lỗi khi tải sản phẩm.</p>";
+      console.error(err);
+    });
+});

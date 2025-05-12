@@ -1,16 +1,26 @@
 [
   {
-    "id": 1,
-    "name": "Giày Tây Nam Da",
-    "category": "giay-nam",
-    "price": 850000,
-    "image": "images/giay1.jpg"
+    "name": "Giày nam thể thao",
+    "price": "500000",
+    "image": "assets/giaynam.jpg",
+    "category": "giay-nam"
   },
   {
-    "id": 2,
-    "name": "Giày Cao Gót Nữ",
-    "category": "giay-nu",
-    "price": 690000,
-    "image": "images/giaynu1.jpg"
+    "name": "Giày nữ cao gót",
+    "price": "600000",
+    "image": "assets/giaynu.jpg",
+    "category": "giay-nu"
+  },
+  {
+    "name": "Túi xách thời trang",
+    "price": "700000",
+    "image": "assets/tuixach.jpg",
+    "category": "tui-xach"
+  },
+  {
+    "name": "Phụ kiện thời trang",
+    "price": "150000",
+    "image": "assets/phukien.jpg",
+    "category": "phu-kien"
   }
 ]
