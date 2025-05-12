@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!window.CATEGORY) return;
 
-  fetch('/example.json')
+  fetch('example.json')
     .then(res => res.json())
     .then(data => {
       let filtered = data.filter(p => p.category === CATEGORY);
