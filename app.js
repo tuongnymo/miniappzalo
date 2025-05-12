@@ -1,30 +1,44 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const params = new URLSearchParams(window.location.search);
-  const category = params.get("category");
-  const productList = document.getElementById("product-list");
+document.addEventListener('DOMContentLoaded', () => {
+  const productList = document.getElementById('product-list');
+  const sortSelect = document.getElementById('sort');
 
-  fetch("example.json")
+  if (!window.CATEGORY) return;
+
+  fetch('example.json')
     .then(res => res.json())
     .then(data => {
-      const filtered = data.filter(p => p.category === category);
-      if (filtered.length === 0) {
-        productList.innerHTML = "<p>Không có sản phẩm nào.</p>";
-        return;
+      let filtered = data.filter(p => p.category === CATEGORY);
+
+      function render(products) {
+        productList.innerHTML = products.map(p => `
+          <div class="product-item">
+            <img src="${p.image}" alt="${p.name}">
+            <p>${p.name}</p>
+            <p class="price">${formatPrice(p.price)}</p>
+          </div>
+        `).join('');
       }
 
-      filtered.forEach(product => {
-        const div = document.createElement("div");
-        div.className = "product";
-        div.innerHTML = `
-          <img src="${product.image}" alt="${product.name}">
-          <h3>${product.name}</h3>
-          <p>${product.price}₫</p>
-        `;
-        productList.appendChild(div);
+      function formatPrice(price) {
+        return price.toLocaleString('vi-VN') + 'đ';
+      }
+
+      sortSelect.addEventListener('change', () => {
+        const type = sortSelect.value;
+        if (type === 'asc') {
+          filtered.sort((a, b) => a.price - b.price);
+        } else if (type === 'desc') {
+          filtered.sort((a, b) => b.price - a.price);
+        } else {
+          filtered = data.filter(p => p.category === CATEGORY); // reset
+        }
+        render(filtered);
       });
+
+      render(filtered);
     })
     .catch(err => {
-      productList.innerHTML = "<p>Lỗi khi tải sản phẩm.</p>";
-      console.error(err);
+      console.error('Lỗi khi tải dữ liệu sản phẩm:', err);
+      productList.innerHTML = '<p>Không thể tải sản phẩm.</p>';
     });
 });

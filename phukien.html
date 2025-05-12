@@ -1,0 +1,31 @@
+<!-- phu-kien.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phụ kiện - Fullstore</title>
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+  <h1 class="product-title">Phụ kiện</h1>
+
+  <div class="filter-sort">
+    <label for="sort">Sắp xếp:</label>
+    <select id="sort">
+      <option value="default">Mặc định</option>
+      <option value="asc">Giá tăng dần</option>
+      <option value="desc">Giá giảm dần</option>
+    </select>
+  </div>
+
+  <div class="product-grid" id="product-list">
+    <!-- Sản phẩm sẽ được hiển thị bằng JS -->
+  </div>
+
+  <script>
+    const CATEGORY = "phu-kien";
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
