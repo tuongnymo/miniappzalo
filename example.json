@@ -4,27 +4,27 @@
     "name": "Giày sneaker nam thể thao",
     "price": 550000,
     "image": "https://i.imgur.com/XXXXXXX.jpeg",
-    "category": "giay-nam"
+    "category": "giaynam"
   },
   {
     "id": 2,
     "name": "Giày cao gót nữ sang trọng",
     "price": 420000,
     "image": "https://i.imgur.com/BaNmL2D.jpeg",
-    "category": "giay-nu"
+    "category": "giaynu"
   },
   {
     "id": 3,
     "name": "Túi đeo chéo nữ mini",
     "price": 380000,
     "image": "https://i.imgur.com/4FNCIil.jpeg",
-    "category": "tui-xach"
+    "category": "tuixach"
   },
   {
     "id": 4,
     "name": "Dây nịt da nam cao cấp",
     "price": 150000,
     "image": "https://i.imgur.com/gvvjPVN.jpeg",
-    "category": "phu-kien"
+    "category": "phukien"
   }
 ]
